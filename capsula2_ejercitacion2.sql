@@ -29,4 +29,4 @@ GROUP BY curso.codigo;
 SELECT curso.nombre as "curso", curso.cupo - COUNT(*) as "cupo disponible menor a 10"
 from curso INNER JOIN inscripcion on curso.codigo = inscripcion.CURSO_codigo
 GROUP BY curso.codigo
-HAVING curso.cupo - COUNT(*) < 10
+HAVING curso.cupo - COUNT(*) < 10;
